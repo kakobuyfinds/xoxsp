@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="HipoBuy spreadsheet po polsku: kategorie CAFANS, dobór rozmiaru, ocena zdjęć QC i porównanie kosztów wysyłki do Polski.">
+<title>HipoBuy spreadsheet po polsku | Kategorie, rozmiary i zdjęcia QC</title>
+<style>
+:root{color-scheme:light;--ink:#251b2a;--paper:#fbf5e9;--accent:#752839;--line:#bca99c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+header,footer{padding:1rem 0;border-bottom:1px solid var(--line)}
+a{color:inherit;text-underline-offset:.22em}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+header a{font-weight:850;letter-spacing:.12em}
+.hero,.guides{display:grid;grid-template-columns:1.08fr 1fr;gap:clamp(1rem,4vw,4rem);align-items:center}
+.hero{padding-block:clamp(1.5rem,4vw,4rem)}
+h1,h2,h3{line-height:1.12;margin:0 0 .65em}
+h1{font-size:clamp(2.5rem,7vw,6.2rem);letter-spacing:-.06em}
+h1 span{display:block;color:var(--accent)}
+h2{font-size:clamp(1.65rem,4vw,2.6rem);letter-spacing:-.035em}
+p{margin:0 0 1rem}
+figure{margin:0}
+img{display:block;width:100%;height:auto;background:#eee5dc}
+.hero img{aspect-ratio:4/3;object-fit:contain}
+figcaption{font-size:.875rem;padding:.55rem 0;overflow-wrap:anywhere}
+.cta{display:inline-block;padding:.65rem 1rem;background:var(--accent);color:#fff;border-radius:.25rem;font-weight:700}
+section{margin-bottom:2.75rem}
+.categories{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+.categories a{display:block;height:100%;padding:.75rem;border:1px solid var(--line);font-weight:700}
+.categories a:hover{background:#f0ded8}
+.guides{align-items:stretch;gap:1rem}
+article{padding:1.2rem;border-top:3px solid var(--accent);background:#fffaf3}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.gallery img{aspect-ratio:4/5;object-fit:contain}
+details{border-top:1px solid var(--line);padding:.8rem 0}
+summary{cursor:pointer;font-weight:750}
+details p{margin:.5rem 0 0}
+footer{border-top:1px solid var(--line);border-bottom:0}
+@media(max-width:48rem){.hero,.guides{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"pl",
+  "name":"HipoBuy spreadsheet po polsku",
+  "mainEntity":[
+    {"@type":"Question","name":"Co to jest HipoBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"To określenie zestawienia ofert, które pomaga znaleźć produkty według kategorii i odszukać ogłoszenie źródłowe."}},
+    {"@type":"Question","name":"Co pokazują zdjęcia QC?","acceptedAnswer":{"@type":"Answer","text":"Pokazują widoczne cechy sfotografowanego egzemplarza, np. kolor, szwy i stan podeszwy. Ustal, czy zdjęcia dotyczą Twojego zamówienia."}},
+    {"@type":"Question","name":"Czy można złożyć zamówienie na tej stronie?","acceptedAnswer":{"@type":"Answer","text":"Wybierz kategorię, aby przejść do CAFANS. Dostępność, warunki zakupu i dostawy sprawdzisz w miejscu składania zamówienia."}}
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/xoxsp/">
+</head>
+<body>
+<!--
+Nota redakcyjna: bezpośredni podgląd pierwszej strony Google był niedostępny.
+Analiza tytułów i tematów z dostępnych wyników dla zapytania HipoBuy spreadsheet:
+hipobuy.fashion, hipospreadsheets.com, hipobuybuy.courses, rep.tools, hipobuy-sheets.com,
+rep.tips, ssfinds.com, hipobuy.io, zentbuyspreadsheet.com, oopbuyseller.net.
+Frazy dodatkowe: arkusz HipoBuy; katalog CAFANS; zdjęcia QC; wysyłka do Polski.
+Frazy szczegółowe wykorzystane przy opracowaniu treści:
+HipoBuy spreadsheet po polsku; jak korzystać z arkusza HipoBuy; link do ogłoszenia;
+jak znaleźć ogłoszenie źródłowe; jak sprawdzić dostępność rozmiaru; wyszukiwanie po kodzie produktu;
+jak dobrać rozmiar butów; tabela rozmiarów butów; długość stopy w centymetrach;
+długość wkładki; jak mierzyć ubranie na płasko; szerokość pod pachami;
+długość rękawa; szerokość spodni w pasie; długość nogawki od kroku;
+jak czytać zdjęcia QC; zdjęcie produktu z miarką; kontrola szwów w bluzie;
+jak sprawdzić zapięcie czapki; koszt wysyłki do Polski; waga gabarytowa paczki;
+opłaty pośrednika; opłaty importowe; porównanie kosztów w PLN.
+-->
+<header><div class="wrap"><a href="https://www.cafans.com">CAFANS</a></div></header>
+<main class="wrap">
+<div class="hero">
+  <div>
+    <h1>HipoBuy <span>spreadsheet</span></h1>
+    <p>Zacznij od kategorii CAFANS. Gdy znajdziesz interesujący model, porównaj wymiary, sprawdź zdjęcia i policz koszt dostawy do Polski.</p>
+    <a class="cta" href="https://www.cafans.com">Otwórz katalog CAFANS</a>
+  </div>
+  <figure>
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Air_Force_1.JPG/960px-Air_Force_1.JPG" width="960" height="720" fetchpriority="high" alt="But sportowy Nike Air Force 1">
+    <figcaption>Nike Air Force 1 · fot. Xanor, Wikimedia Commons, CC0</figcaption>
+  </figure>
+</div>
+<section aria-labelledby="categories-title">
+  <h2 id="categories-title">Kategorie w CAFANS</h2>
+  <nav aria-label="Kategorie produktów">
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Buty</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirty</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Kurtki</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Nakrycia głowy</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Komplety</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Koszulki sportowe</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Akcesoria</a></li>
+    </ul>
+  </nav>
+</section>
+<section aria-labelledby="guides-title">
+  <h2 id="guides-title">Poradniki zakupowe</h2>
+  <div class="guides">
+    <article>
+      <h3>Jak korzystać z arkusza HipoBuy</h3>
+      <p>Zapisz link do ogłoszenia i sprawdź u sprzedawcy, czy wybrany kolor i rozmiar są dostępne. Jeśli odnośnik wygasł, wyszukaj nazwę modelu razem z kodem produktu. Porównaj oznaczenia wariantu i zdjęcia w nowym ogłoszeniu.</p>
+    </article>
+    <article>
+      <h3>Jak dobrać rozmiar butów i ubrań</h3>
+      <p>Zmierz obie stopy w skarpetach i sprawdź, czy tabela rozmiarów butów podaje długość stopy, czy wkładki. Przy odzieży połóż dobrze dopasowane ubranie na płasko. Porównaj szerokość pod pachami i długość rękawa. W przypadku spodni sprawdź szerokość w pasie i długość nogawki od kroku.</p>
+    </article>
+    <article>
+      <h3>Jak czytać zdjęcia QC</h3>
+      <p>Przy butach obejrzyj podeszwę i piętę obu sztuk. Przy bluzie przyjrzyj się szwom i ściągaczom, a przy czapce sprawdź zapięcie. Jeśli nie widać skali, poproś o zdjęcie z miarką. Autentyczność oceniaj również na podstawie pochodzenia produktu i dokumentów od sprzedawcy.</p>
+    </article>
+    <article>
+      <h3>Jak oszacować koszt wysyłki do Polski</h3>
+      <p>Zsumuj cenę produktu, opłaty pośrednika i przewóz. Sprawdź, czy przewoźnik stosuje wagę rzeczywistą lub gabarytową i czy wycena obejmuje ewentualne podatki oraz opłaty importowe. Porównaj kwoty w PLN według tego samego kursu i sprawdź termin zgłoszenia zwrotu.</p>
+    </article>
+  </div>
+</section>
+<section aria-labelledby="gallery-title">
+  <h2 id="gallery-title">Przykłady fasonów i detali</h2>
+  <p>Zdjęcia mają charakter poglądowy. Dostępność sprawdzisz w katalogu.</p>
+  <div class="gallery">
+    <figure>
+      <img src="https://sg.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-short-sleeved-t-shirt--HUY12WNPG469_PM2_Front%20view.jpg" width="480" height="600" loading="lazy" decoding="async" alt="Koszulka Louis Vuitton Monogram z krótkim rękawem, widok z przodu">
+      <figcaption>Louis Vuitton · koszulka Monogram</figcaption>
+    </figure>
+    <figure>
+      <img src="https://assets.christiandior.com/is/image/diorprod/693C913B3175C980_SBG_E03?$r4x5_raw$=&amp;bfc=on&amp;crop=0,0,4000,5000&amp;hei=600&amp;qlt=75&amp;wid=480" width="480" height="600" loading="lazy" decoding="async" alt="Czarna bawełniana czapka Dior CD Icon z daszkiem">
+      <figcaption>Dior · czapka CD Icon</figcaption>
+    </figure>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Young_man_with_short_black_hair_wearing_Gucci_cap_from_behind.jpg/500px-Young_man_with_short_black_hair_wearing_Gucci_cap_from_behind.jpg" width="500" height="533" loading="lazy" decoding="async" alt="Czapka Gucci na głowie, widok od tyłu">
+      <figcaption>Gucci · czapka od tyłu. Fot. Alex Neman, Wikimedia Commons, CC BY-SA 4.0.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://assets.hermes.com/is/image/hermesproduct/700001F%2001_front_wm_101?$product_default_bg$=&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Czarna emaliowana bransoletka Hermès Clic H ze złocistym zapięciem">
+      <figcaption>Hermès · bransoletka Clic H</figcaption>
+    </figure>
+  </div>
+</section>
+<section aria-labelledby="faq-title">
+  <h2 id="faq-title">Najczęstsze pytania</h2>
+  <details open>
+    <summary>Co to jest HipoBuy spreadsheet?</summary>
+    <p>To określenie zestawienia ofert, które pomaga znaleźć produkty według kategorii i odszukać ogłoszenie źródłowe.</p>
+  </details>
+  <details>
+    <summary>Co pokazują zdjęcia QC?</summary>
+    <p>Pokazują widoczne cechy sfotografowanego egzemplarza, np. kolor, szwy i stan podeszwy. Ustal, czy zdjęcia dotyczą Twojego zamówienia.</p>
+  </details>
+  <details>
+    <summary>Czy można złożyć zamówienie na tej stronie?</summary>
+    <p>Wybierz kategorię, aby przejść do CAFANS. Dostępność, warunki zakupu i dostawy sprawdzisz w miejscu składania zamówienia.</p>
+  </details>
+</section>
+</main>
+<footer><div class="wrap">Niezależny przewodnik zakupowy. <a href="https://www.cafans.com">Przejdź do CAFANS</a></div></footer>
+</body>
+</html>
